@@ -1,9 +1,9 @@
 ## Feature 2
 As a User, I should be able to Show/Hide Event Details. So that I can learn more about the Event.
 - Scenario 1: An event element is collapsed by default.
-  Given the user has opened the events app
-  When the user views an event element
-  Then the event details should be collapsed by default
+  - Given the user has opened the events app
+  - When the user views an event element
+  - Then the event details should be collapsed by default
 - Scenario 2: User can expand an event to see details.
 - Scenario 3: User can collapse an event to hide details.
 
