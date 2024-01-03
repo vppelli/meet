@@ -8,6 +8,7 @@
   - [Feature 4](https://github.com/vppelli/meet?tab=readme-ov-file#feature-4-use-the-app-when-offline)
   - [Feature 5](https://github.com/vppelli/meet?tab=readme-ov-file#feature-5-add-an-app-shortcut-to-the-home-screen)
   - [Feature 6](https://github.com/vppelli/meet?tab=readme-ov-file#feature-6-display-charts-visualizing-event-details)
+  - [Serverless function](https://github.com/vppelli/meet/blob/main/README.md#how-meet-app-will-use-serverless-function)
   - [Bonus Diagram](https://github.com/vppelli/meet?tab=readme-ov-file#meet-app-diagram-exercise-42)
 - [API](https://github.com/vppelli/meet?tab=readme-ov-file#api-used)
 
