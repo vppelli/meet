@@ -51,3 +51,6 @@ As a User, I should be able to Display Charts Visualizing Event Details. So that
   - Given the user wants to view the ammount of events upcoming based on city
   - When the user selects the option to view a chart of upcoming events
   - Then the events should display a chart of upcoming events in a city and how many
+
+### Meet App Diagram Exercise 4.2
+![Meet App Diagram Image](https://imgur.com/a/fSb2hNy)
