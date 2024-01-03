@@ -53,4 +53,4 @@ As a User, I should be able to Display Charts Visualizing Event Details. So that
   - Then the events should display a chart of upcoming events in a city and how many
 
 ### Meet App Diagram Exercise 4.2
-![Meet App Diagram Image](https://imgur.com/a/fSb2hNy)
+![Meet App Diagram Image](./img/Meetapp-Diagram.jpg)
