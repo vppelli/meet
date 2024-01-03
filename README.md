@@ -1,5 +1,24 @@
-#  User stories and scenarios 2-6
+# Meet App
+### Outline
+- About the App
+- Live Demo
+- Project Features & Scenarios
+  - Feature 2
+  - Feature 3
+  - Feature 4
+  - Feature 5
+  - Feature 6
+  - [Bonus Diagram](https://github.com/vppelli/meet?tab=readme-ov-file#meet-app-diagram-exercise-42)
+- API
+
+# Objective of Meet App
+To build a serverless, progressive web application (PWA) with React using a
+test-driven development (TDD) technique. The application uses the Google
+Calendar API to fetch upcoming events.
+  
 ### [gh-pages](https://vppelli.github.io/meet/)
+
+# User stories and scenarios 2-6
 
 ## Feature 2 Show/Hide Event Details
 As a User, I should be able to Show/Hide Event Details. So that I can learn more about the Event.
@@ -54,3 +73,6 @@ As a User, I should be able to Display Charts Visualizing Event Details. So that
 
 ### Meet App Diagram Exercise 4.2
 ![Meet App Diagram Image](./img/Meetapp-Diagram.jpg)
+
+# API Used
+Google Cloud API [https://console.cloud.google.com/welcome/new?authuser=1&project=unique-badge-410116&supportedpurview=project](https://console.cloud.google.com/welcome/new?authuser=1&project=unique-badge-410116&supportedpurview=project)
