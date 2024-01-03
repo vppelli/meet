@@ -1,15 +1,15 @@
 # Meet App
 ### Outline
-- [About the App]
-- [Live Demo]
+- [About the App](https://github.com/vppelli/meet?tab=readme-ov-file#objective-of-meet-app)
+- [Live Demo](https://github.com/vppelli/meet?tab=readme-ov-file#live-demo)
 - Project Features & Scenarios
-  - [Feature 2]
-  - [Feature 3]
-  - [Feature 4]
-  - [Feature 5]
-  - [Feature 6]
+  - [Feature 2](https://github.com/vppelli/meet?tab=readme-ov-file#feature-2-showhide-event-details)
+  - [Feature 3](https://github.com/vppelli/meet?tab=readme-ov-file#feature-3-specify-number-of-events)
+  - [Feature 4](https://github.com/vppelli/meet?tab=readme-ov-file#feature-4-use-the-app-when-offline)
+  - [Feature 5](https://github.com/vppelli/meet?tab=readme-ov-file#feature-5-add-an-app-shortcut-to-the-home-screen)
+  - [Feature 6](https://github.com/vppelli/meet?tab=readme-ov-file#feature-6-display-charts-visualizing-event-details)
   - [Bonus Diagram](https://github.com/vppelli/meet?tab=readme-ov-file#meet-app-diagram-exercise-42)
-- [API]
+- [API](https://github.com/vppelli/meet?tab=readme-ov-file#api-used)
 
 # Objective of Meet App
 To build a serverless, progressive web application (PWA) with React using a
@@ -78,4 +78,4 @@ As a User, I should be able to Display Charts Visualizing Event Details. So that
 # API Used
 Google Cloud API [https://console.cloud.google.com/welcome/new?authuser=1&project=unique-badge-410116&supportedpurview=project](https://console.cloud.google.com/welcome/new?authuser=1&project=unique-badge-410116&supportedpurview=project)
 
-[To The Top]()
+[To The Top](https://github.com/vppelli/meet?tab=readme-ov-file#meet-app)
