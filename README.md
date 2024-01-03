@@ -72,6 +72,9 @@ As a User, I should be able to Display Charts Visualizing Event Details. So that
   - When the user selects the option to view a chart of upcoming events
   - Then the events should display a chart of upcoming events in a city and how many
 
+### How Meet App will use serverless function
+Serverless function can be used to enhance the functionality of the app. It can provide Real-time updates, Personalized experiences as event recommendations, Event data processing, Notifications, Geolocation and Location-Based services for events, Handle API requests to Googles Cloud, and being able to automatically scale base on demand!
+
 ### Meet App Diagram Exercise 4.2
 ![Meet App Diagram Image](./img/Meetapp-Diagram.jpg)
 
