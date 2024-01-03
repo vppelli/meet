@@ -1,26 +1,27 @@
 # Meet App
 ### Outline
-- About the App
-- Live Demo
+- [About the App]
+- [Live Demo]
 - Project Features & Scenarios
-  - Feature 2
-  - Feature 3
-  - Feature 4
-  - Feature 5
-  - Feature 6
+  - [Feature 2]
+  - [Feature 3]
+  - [Feature 4]
+  - [Feature 5]
+  - [Feature 6]
   - [Bonus Diagram](https://github.com/vppelli/meet?tab=readme-ov-file#meet-app-diagram-exercise-42)
-- API
+- [API]
 
 # Objective of Meet App
 To build a serverless, progressive web application (PWA) with React using a
 test-driven development (TDD) technique. The application uses the Google
 Calendar API to fetch upcoming events.
   
-### [gh-pages](https://vppelli.github.io/meet/)
+# [Live Demo](https://vppelli.github.io/meet/)
 
-# User stories and scenarios 2-6
+# Project Features & Scenarios
+User stories and scenarios 2-6
 
-## Feature 2 Show/Hide Event Details
+### Feature 2 Show/Hide Event Details
 As a User, I should be able to Show/Hide Event Details. So that I can learn more about the Event.
 - Scenario 1: An event element is collapsed by default.
   - Given user has found an event
@@ -35,7 +36,7 @@ As a User, I should be able to Show/Hide Event Details. So that I can learn more
   - When the user clicks the hide details
   - Then the event details should collapse
 
-## Feature 3 Specify Number of Events
+### Feature 3 Specify Number of Events
 As a User, I should be able to Specify Number of Events. So that viewing events are better.
 - Scenario 1: When user hasn’t specified a number, 32 events are shown by default.
   - Given the user wants to see all events without specifing a number
@@ -46,7 +47,7 @@ As a User, I should be able to Specify Number of Events. So that viewing events 
   - When the user specifies 5 in search field
   - Then the events will show only 5 
 
-## Feature 4 Use the App When Offline
+### Feature 4 Use the App When Offline
 As a User, I should be able to Use the App When Offline. So that when theres no connection I can still view my Event history.
 - Scenario 1: Show cached data when there’s no internet connection.
   - Given the user has no internet access and is in offline mode
@@ -57,14 +58,14 @@ As a User, I should be able to Use the App When Offline. So that when theres no 
   - When the user attempts to changes search
   - Then the page will not load and show an error message indicating that changes will not load in offline
 
-## Feature 5 Add an App Shortcut to the Home Screen
+### Feature 5 Add an App Shortcut to the Home Screen
 As a User, I should be able to Add an App Shortcut to the Home Screen. So that it is of easy access.
 - Scenario 1: User can install the meet app as a shortcut on their device home screen
   - Given the user wants to add the app as a shortcut
   - When the user adds it to there device home screen
   - Then they will have easy access from there devices home screen to the events app
 
-## Feature 6 Display Charts Visualizing Event Details
+### Feature 6 Display Charts Visualizing Event Details
 As a User, I should be able to Display Charts Visualizing Event Details. So that I am aware of how many events are avalible and where.
 - Scenario 1: Show a chart with the number of upcoming events in each city.
   - Given the user wants to view the ammount of events upcoming based on city
@@ -76,3 +77,5 @@ As a User, I should be able to Display Charts Visualizing Event Details. So that
 
 # API Used
 Google Cloud API [https://console.cloud.google.com/welcome/new?authuser=1&project=unique-badge-410116&supportedpurview=project](https://console.cloud.google.com/welcome/new?authuser=1&project=unique-badge-410116&supportedpurview=project)
+
+[To The Top]()
