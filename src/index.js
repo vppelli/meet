@@ -7,9 +7,6 @@ import reportWebVitals from './reportWebVitals';
 import * as atatus from 'atatus-spa';
 atatus.config('56a17b07d2c54675ad12c1c0ee671ee4').install();
 
-import * as atatus from 'atatus-spa';
-atatus.config('56a17b07d2c54675ad12c1c0ee671ee4').install();
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

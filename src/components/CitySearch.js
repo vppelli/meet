@@ -9,7 +9,7 @@ const CitySearch = ({ allLocations, setCurrentCity }) => {
 
     useEffect(() => {
         setSuggestions(allLocations);
-    }, [JSON.stringify(allLocations)]);
+    }, [allLocations]);
     
     const handleInputChanged = (event) => {
         const value = event.target.value;
