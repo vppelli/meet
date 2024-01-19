@@ -4,23 +4,28 @@ import { useEffect, useState } from "react";
 
 const NumberOfEvents = ({ setCurrentNOE }) => {
     const [inputNumber, setInputNumber] = useState('32');
-    const [debouncedInputValue, setDebouncedInputValue] = useState('');
     const handleInputChanged = (event) => {
         const value = event.target.value;
-        setInputNumber(value);
-        setCurrentNOE(value);
+        if(isNaN(value) || value < 0){
+            setInputNumber(32);
+            setCurrentNOE(32);
+        }else{
+            setInputNumber(value);
+            setCurrentNOE(value);
+        }
     };
 
     useEffect(() => {
-        const delayInputTimeoutId = setTimeout(() => {
-            setDebouncedInputValue(inputNumber);
-        }, 500);
-        return () => clearTimeout(delayInputTimeoutId);
+        const delayDebounce = setTimeout(() => {
+            setInputNumber(inputNumber);
+        }, 1000);
+        return () => clearTimeout(delayDebounce);
     }, [inputNumber]);
+    // not sure if this works
 
     return (
         <div id="number-of-event">
-            <input type = "text" value = { inputNumber } onChange = { handleInputChanged }/>
+            <input type = "text" value = { inputNumber } onChange = { handleInputChanged } placeholder = "Type a Number"/>
         </div>
     );
 }
