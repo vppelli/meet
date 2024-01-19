@@ -47,3 +47,5 @@ describe('<App /> integration', () => {
         });
     });
 });
+
+// TDD testing
