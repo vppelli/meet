@@ -22,7 +22,7 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert, setInfoAlert }) => {
     useEffect(() => {
         const delayDebounce = setTimeout(() => {
             setInputNumber(inputNumber);
-        }, 1000);
+        }, 500);
         return () => clearTimeout(delayDebounce);
     }, [inputNumber]);
     // not sure if this works
