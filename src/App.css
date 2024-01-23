@@ -1,8 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
+body {
+  background-color: rgb(48, 67, 102);
+}
+
+h1,
+h2 {
+  color: rgb(253, 118, 140);
+}
+
 .App {
   text-align: center;
   padding: 2% 5%;
+  background: linear-gradient(0deg, rgb(48, 67, 102), rgb(242, 202, 199), rgb(48, 67, 102));
 }
 
 .App * {
@@ -10,8 +20,22 @@
 }
 
 ul {
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4px;
   list-style: none;
+  border-radius: 4px;
+  border: 1px solid white;
+  background-image: url(../img/City-Collage.jpg);
+  background-size: cover;
+  max-width: 2000px;
+  margin: auto;
+}
+
+li {
+  background: linear-gradient(135deg, rgba(220, 220, 220, 0.75), rgba(240, 240, 240, 0.2));
+  backdrop-filter: blur(14px);
 }
 
 p {
@@ -31,6 +55,13 @@ input[type="number"] {
   margin-bottom: 20px;
 }
 
+.title {
+  color: rgb(253, 118, 140);
+  font-size: 100px;
+  font-weight: bold;
+  padding: 10px;
+}
+
 .city {
   width: 250px;
 }
@@ -39,6 +70,7 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 12px;
   position: relative;
 }
 
@@ -50,13 +82,13 @@ input[type="number"] {
   align-self: center;
   margin: 0;
   font-size: 14px;
+  background: linear-gradient(135deg, rgba(220, 220, 220, 0.75), rgba(240, 240, 240, 0.2));
   box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
 }
 
 .suggestions>li {
   text-align: left;
   padding: 8px 6px 8px 10px;
-  background-color: #eee;
   cursor: default;
 }
 
@@ -84,14 +116,35 @@ input[type="number"] {
   bottom: 5px;
   padding: 5px 8px;
   border-radius: 4px;
+  border: 1px solid white;
   outline: none;
   cursor: pointer;
+  background: linear-gradient(135deg, rgba(220, 220, 220, 0.75), rgba(240, 240, 240, 0.2));
+  backdrop-filter: blur(10px);
+}
+
+.details-btn:hover {
+  background: linear-gradient(135deg, rgba(173, 255, 243, 0.75), rgba(230, 188, 0, 0.2));
+}
+
+.details-btn:active {
+  background: linear-gradient(135deg, rgba(201, 202, 202, 0.75), rgba(226, 226, 226, 0.2));
 }
 
 .alerts-container {
   position: fixed;
   top: 0px;
   left: 20px;
-  width: 250px;
+  width: 400px;
   z-index: 1000;
+}
+
+@media all and (max-width: 900px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .alerts-container {
+    width: 250px;
+  }
 }
