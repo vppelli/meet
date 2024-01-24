@@ -11,7 +11,7 @@ class Alert extends Component {
 
     getStyle = () => {
         return {
-            color: this.color,
+            color: "white",
             backgroundColor: this.bgColor,
             borderWidth: "1px",
             borderStyle: "solid",
@@ -22,7 +22,9 @@ class Alert extends Component {
             textAlign: "center",
             fontSize: "12px",
             margin: "10px 0",
-            padding: "10px"
+            padding: "10px",
+            animationName: this.name,
+            animationDuration: this.duration
         };
     }
 
@@ -39,7 +41,9 @@ class InfoAlert extends Alert {
     constructor(props) {
         super(props);
         this.color = "rgb(0, 0, 255)"; // blue
-        this.bgColor = "rgba(220, 220, 255, 0.2)"; // light blue
+        this.bgColor = "rgba(0, 0, 255, 0.2)"; // light blue
+        this.name = "info";
+        this.duration = "2s";
     }
 };
 
@@ -47,7 +51,9 @@ class ErrorAlert extends Alert {
     constructor(props) {
         super(props);
         this.color = "rgb(255, 0, 0)"; // red
-        this.bgColor = "rgba(255, 220, 220, 0.2)"; // light red
+        this.bgColor = "rgba(255, 0, 0, 0.2)"; // light red
+        this.name = "error";
+        this.duration = "2s";
     }
 };
 
@@ -55,7 +61,9 @@ class WarningAlert extends Alert {
     constructor(props) {
         super(props);
         this.color = "rgb(255, 165, 0)"; // orange
-        this.bgColor = "rgba(255, 202, 105, 0.2)"; // light orange
+        this.bgColor = "rgba(255, 166, 0, 0.2)"; // light orange
+        this.name = "warn";
+        this.duration = "2s";
     }
 };
 

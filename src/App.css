@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
+:root {
+  --width: 420px;
+}
+
 body {
   background-color: rgb(48, 67, 102);
 }
@@ -23,10 +27,9 @@ ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 4px;
+  padding: 0px;
   list-style: none;
   border-radius: 4px;
-  border: 1px solid white;
   background-image: url(../img/City-Collage.jpg);
   background-size: cover;
   max-width: 2000px;
@@ -103,7 +106,8 @@ input[type="number"] {
 
 .event {
   padding: 10px 10px 35px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: left;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -135,16 +139,48 @@ input[type="number"] {
   position: fixed;
   top: 0px;
   left: 20px;
-  width: 400px;
+  width: var(--width);
   z-index: 1000;
 }
 
+@keyframes info {
+  from {background-color: rgba(0, 0, 255, 1);}
+  from {width: 500px;}
+  from {height: 100px;}
+  to {width: var(--width);}
+  to {height: 60px;}
+  to {background-color: rgba(0, 0, 255, 0.2);}
+}
+
+@keyframes warn {
+  from {background-color: rgba(255, 166, 0, 1);}
+  from {width: 500px;}
+  from {height: 100px;}
+  to {width: var(--width);}
+  to {height: 60px;}
+  to {background-color: rgba(255, 166, 0, 0.2);}
+}
+
+@keyframes error {
+  from {background-color: rgba(255, 0, 0, 1);}
+  from {width: 500px;}
+  from {height: 100px;}
+  to {width: var(--width);}
+  to {height: 60px;}
+  to {background-color: rgba(255, 0, 0, 0.2);}
+}
+
 @media all and (max-width: 900px) {
+  :root {
+    --width: 270px;
+  }
+
   .title {
     font-size: 50px;
   }
 
   .alerts-container {
-    width: 250px;
+    top: initial;
+    bottom: 0px;
   }
 }
