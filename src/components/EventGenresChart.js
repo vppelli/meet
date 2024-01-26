@@ -21,7 +21,7 @@ const EventGenresChart = ({ events }) => {
         return data;
     };
 
-    const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+    const COLORS = ['#0088FE', '#FFBB28', '#FFE042', '#FFBB28', '#FF8042'];
 
 
     const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, percent, index }) => {
