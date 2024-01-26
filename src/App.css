@@ -143,6 +143,13 @@ input[type="number"] {
   z-index: 1000;
 }
 
+.charts-container {
+  margin: auto;
+  max-width: 2000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 @keyframes info {
   from {background-color: rgba(0, 0, 255, 1);}
   from {width: 500px;}
@@ -179,8 +186,7 @@ input[type="number"] {
     font-size: 50px;
   }
 
-  .alerts-container {
-    top: initial;
-    bottom: 0px;
+  .charts-container {
+    grid-template-columns: 1fr;
   }
 }
