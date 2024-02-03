@@ -1,27 +1,44 @@
-# Meet App
+[![Meet App](https://github.com/vppelli/Vppelli/blob/main/img/Meet%20App.png)](https://vppelli.github.io/meet/)
+
 ### Outline
 - [About the App](https://github.com/vppelli/meet?tab=readme-ov-file#objective-of-meet-app)
 - [Live Demo](https://github.com/vppelli/meet?tab=readme-ov-file#live-demo)
 - Project Features & Scenarios
-  - [Feature 2](https://github.com/vppelli/meet?tab=readme-ov-file#feature-2-showhide-event-details)
-  - [Feature 3](https://github.com/vppelli/meet?tab=readme-ov-file#feature-3-specify-number-of-events)
-  - [Feature 4](https://github.com/vppelli/meet?tab=readme-ov-file#feature-4-use-the-app-when-offline)
-  - [Feature 5](https://github.com/vppelli/meet?tab=readme-ov-file#feature-5-add-an-app-shortcut-to-the-home-screen)
-  - [Feature 6](https://github.com/vppelli/meet?tab=readme-ov-file#feature-6-display-charts-visualizing-event-details)
-  - [Serverless function](https://github.com/vppelli/meet/blob/main/README.md#how-meet-app-will-use-serverless-function)
-  - [Bonus Diagram](https://github.com/vppelli/meet?tab=readme-ov-file#meet-app-diagram-exercise-42)
-- [API](https://github.com/vppelli/meet?tab=readme-ov-file#api-used)
+  - [Feature 1](#feature-1-filter-events-by-city)
+  - [Feature 2](#feature-2-showhide-event-details)
+  - [Feature 3](#feature-3-specify-number-of-events)
+  - [Feature 4](#feature-4-use-the-app-when-offline)
+  - [Feature 5](#feature-5-add-an-app-shortcut-to-the-home-screen)
+  - [Feature 6](#feature-6-display-charts-visualizing-event-details)
+  - [Serverless function](#how-meet-app-will-use-serverless-function)
+  - [Bonus Diagram](#meet-app-diagram-exercise-42)
+- [API](#api-used)
 
-# Objective of Meet App
+## Objective of Meet App
 To build a serverless, progressive web application (PWA) with React using a
 test-driven development (TDD) technique. The application uses the Google
 Calendar API to fetch upcoming events.
   
-# [Live Demo](https://vppelli.github.io/meet/)
+# [Meet App](https://vppelli.github.io/meet/) Live Demo
 
-# Project Features & Scenarios
-User stories and scenarios 2-6
+## Project Features & Scenarios
+> User stories and scenarios 1-6
 
+### Feature 1 Filter Events By City
+As a user, I should be able to filter events by city. So that I can see a list of events taking place in that city.
+- Scenario 1: When the user hasn’t searched for a specific city, show upcoming events from all cities.
+  - Given the main page with the search option has been opened;
+  - When the user entered a city;
+  - Then they should be shown upcoming events for that city.
+- Scenario 2: Users should see a list of suggestions when they search for a city.
+  - Given the main page with the search option has been opened;
+  - When the user opens the app;
+  - Then they should be shown a list of all events for all the cities available.
+- Scenario 3: User can select a city from the suggested list.
+  - Given user was typing "Berlin" in the city textbox AND the list of suggested cities is showing,
+  - When the user selects a city (e.g., "Berlin, Germany") from the list;
+  - Then their city should be changed to that city (i.e., "Berlin, Germany") AND the user should receive a list of upcoming events in that city.
+    
 ### Feature 2 Show/Hide Event Details
 As a User, I should be able to Show/Hide Event Details. So that I can learn more about the Event.
 - Scenario 1: An event element is collapsed by default.
@@ -76,10 +93,10 @@ As a User, I should be able to Display Charts Visualizing Event Details. So that
 ### How Meet App will use serverless function
 Serverless function can be used to enhance the functionality of the app. It can provide Real-time updates, Personalized experiences as event recommendations, Event data processing, Notifications, Geolocation and Location-Based services for events, Handle API requests to Googles Cloud, and being able to automatically scale base on demand!
 
+[![To The Top](https://img.shields.io/badge/To_the_Top-Clickme-white?style=for-the-badge)](https://github.com/vppelli/meet?tab=readme-ov-file#meet-app)
+
 ### Meet App Diagram Exercise 4.2
 ![Meet App Diagram Image](./img/Meetapp-Diagram.jpg)
 
 # API Used
 Google Cloud API [https://console.cloud.google.com/welcome/new?authuser=1&project=unique-badge-410116&supportedpurview=project](https://console.cloud.google.com/welcome/new?authuser=1&project=unique-badge-410116&supportedpurview=project)
-
-[To The Top](https://github.com/vppelli/meet?tab=readme-ov-file#meet-app)
